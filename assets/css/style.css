@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/concrete_seamless.png");
+  background-repeat: repeat;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+.content {
+  min-height: calc(100vh - 50px);
+}
+
+/* Style for Header    */
+header {
+  background-color: white;
+  margin: 0;
+  border-bottom: 2px solid #777;
+}
+.header_menu {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header_menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.your_name {
+  color: white;
+  background-color: #4aaaa5;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  padding: 20px;
+  float: left;
+  font-size: 18pt;
+}
+
+/* Style for link menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #777;
+  text-align: center;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #4aaaa5;
+  color: white;
+}
+.menu_link {
+  float: right;
+  padding: 20px 0;
+}
+.menu_link li {
+  color: #555;
+  border-right: 1px solid #999;
+}
+.menu_link li:last-child {
+  border-right: none;
+}
+
+/* Style of Information Section */
+section {
+  width: 960px;
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+}
+.section_info::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Style For index.html file */
+img {
+  float: left;
+  margin-right: 20px;
+}
+.profile_photo {
+  width: 200px;
+}
+h1 {
+  color: #4aaaa5;
+  font-family: "Georgia", Times, Times New Roman, serif;
+}
+p {
+  margin: 20px 0 0 0;
+}
+
+/* Style for Contact.html */
+label {
+  font-size: 10pt;
+  color: #666;
+}
+input[type="text"] {
+  color: #777;
+  font-size: 8pt;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 8pt;
+  color: #777;
+  resize: none;
+}
+input[type="submit"] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+/* Style for Portfolio.html */
+
+div.gallery_photo {
+  position: relative;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 240px;
+  max-height: 320px;
+}
+
+div.gallery_photo img {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  flex: 1;
+  object-fit: cover;
+}
+
+div.gallery_title {
+  background-color: #4aaaa5;
+  position: absolute;
+  width: 210px;
+  bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+/* Style for Footer */
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(0%, -50%);
+}
+.footer {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 6pt;
+  color: white;
+  background-color: #777777;
+  height: 50px;
+  border-top: 8px solid #4aaaa5;
+}
