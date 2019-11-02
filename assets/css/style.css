@@ -181,39 +181,45 @@ div.gallery_title {
   height: 50px;
   border-top: 8px solid #4aaaa5;
 }
+/* Media query */
 
-/* Large devices (desktops, 980px and up) */
+/* Large devices (desktops, 980px to 768px) */
 @media (max-width: 980px) {
-  body {
-  }
   .header_menu {
     width: 100%;
   }
   section {
     width: 90%;
   }
-}
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  body {
+  /* Gallery Image Size for Portfolio.html */
+  div.gallery_photo {
+    width: calc(50% - 15px);
+    max-height: 360px;
+    margin-bottom: 10px;
   }
+
+  div.gallery_photo img {
+    max-height: 360px;
+  }
+
+  div.gallery_title {
+    width: calc(100% - 30px);
+  }
+}
+/* Medium devices (tablets, 768px to 640px) */
+@media (max-width: 768px) {
   .profile_photo {
     width: 50%;
   }
 }
-/* Small devices (landscape phones, 640px and up) */
+/* Small devices (landscape phones, 640px and down) */
 @media (max-width: 640px) {
-  body {
-  }
+  /* Header Change */
   .your_name {
     width: 100%;
     margin: 0;
     text-align: center;
     padding-left: 0;
-  }
-  .profile_photo {
-    width: 100%;
-    margin-bottom: 10px;
   }
   .menu_link {
     width: 100%;
@@ -223,5 +229,24 @@ div.gallery_title {
   ul.menu_link li {
     display: inline-block;
     float: none;
+  }
+  /* Profile Photo Size for Index.html */
+  .profile_photo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* Gallery Image Size for Portfolio.html */
+  div.gallery_photo {
+    width: 100%;
+    max-height: 800px;
+    margin-bottom: 10px;
+  }
+
+  div.gallery_photo img {
+    max-height: 100%;
+  }
+
+  div.gallery_title {
+    width: calc(100% - 30px);
   }
 }
